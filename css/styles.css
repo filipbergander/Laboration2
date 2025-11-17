@@ -176,8 +176,8 @@ main p {
 }
 
 .about img {
+    width: 100%;
     height: auto;
-    width: 30%;
 }
 
 /* Bilder inom bildredigering på rad genom flexbox */
