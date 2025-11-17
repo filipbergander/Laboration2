@@ -1,0 +1,357 @@
+/* Font, bakgrundsfärg och margin 0 för att header ska sträcka sig längst ut */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Samma font och bakgrundsfärg i hela body */
+html,
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(252, 241, 218);
+}
+
+/* header med bakgrundsbild transparens */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-image: url(../bilder/header.png);
+    max-height: 350px;
+    margin: 0;
+    opacity: 0.7;
+}
+
+/* logotyp */
+header img {
+    width: 50%;
+    max-height: 350px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Navigeringsmenyn i mitten */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* navigeringsmenyns länkar på rad genom flex */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Navigeringslänkarna med bakgrundsfärg */
+nav li {
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 200, 200);
+    box-shadow: 0 0 5px black;
+    transition: 0.3s;
+    list-style: none;
+}
+
+/* Rödfärg på text till länkarna inom alla sidor på webbplatsen*/
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Huvudubrik */
+h1 {
+    margin: 15px;
+    text-align: center;
+}
+
+/* Underrubrik för bildsektioner */
+h2 {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Textavsnitt för beskrivning av bilder */
+main {
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+/* Texten */
+main p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Text under huvudrubrik på sida bildredigering */
+.desktop {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+/* Ska inte visa text som är för mobil vid desktopläge */
+.mobile {
+    display: none;
+}
+
+.description {
+    margin-bottom: 3rem;
+}
+
+/* Textavsnitt för att beskriva uppgiften på startsida */
+.description p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 55%;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Bildsektioner i grid på startsida och centrerade*/
+.imgseries {
+    display: grid;
+    grid-template-areas:
+        "flower diver"
+        "bull sea";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Bredd på bilderna */
+.imgseries img {
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Bild med flower och placering */
+.flower {
+    grid-area: flower;
+    width: 90%;
+}
+
+/* Bild på dykare och placering */
+.diver {
+    grid-area: diver;
+    width: 90%;
+}
+
+/* Bild på tjur och placering */
+.bull {
+    grid-area: bull;
+    width: 90%;
+}
+
+/* Bild på hav och placering */
+.sea {
+    grid-area: sea;
+    width: 90%;
+}
+
+/* Bild och text om mig */
+.about {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.about p {
+    width: 25%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.about img {
+    height: auto;
+    width: 30%;
+}
+
+/* Bilder inom bildredigering på rad genom flexbox */
+.pictures {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Bildernas storlek minskad */
+.pictures img {
+    width: 28%;
+    height: auto;
+    float: left;
+    border-radius: 3px;
+}
+
+/* Beskrivande text till bilder med redigeringar */
+.pictures p {
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    font-size: 1.1rem;
+    width: 25%;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Surfplattor */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header img {
+        width: 40%;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .about img {
+        height: auto;
+        width: 50%;
+    }
+
+    /* I kolumn och centrerade */
+    .pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures img {
+        width: 70%;
+        height: auto;
+    }
+
+    .pictures p {
+        width: 60%;
+        margin: 1rem;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    /* Visar inte texten som ska enbart finnas på desktops */
+    .desktop {
+        display: none;
+    }
+
+    /* Visar texten för mobilläge */
+    .mobile {
+        display: block;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    /* Ökat bredden */
+    .description p {
+        width: 70%;
+    }
+
+    /* I en kolumn istället för rad */
+    .imgseries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobilläge */
+@media (max-width: 767px) {
+
+    header img {
+        width: 60%;
+    }
+
+    /* Bild och text i kolumn, bild överst och text under */
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Text */
+    .about p {
+        font-size: 0.9rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Bild */
+    .about img {
+        margin-left: 15px;
+        height: auto;
+        width: 65%;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin: 10px;
+    }
+
+    /* Ändrat gap och textstorlek för att bättre passa på mindre upplösningar */
+    nav ul {
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    /* Ändrat bredden */
+    main {
+        width: 70%;
+    }
+
+    /* Visar inte texten som ska finnas för desktops */
+    .desktop {
+        display: none;
+    }
+
+    /* Visar texten för mobil */
+    .mobile {
+        display: block;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    /* I en kolumn */
+    .pictures {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures img {
+        width: 70%;
+    }
+
+    .pictures p {
+        width: 70%;
+        margin: 10px;
+
+    }
+
+    .description {
+        margin-bottom: 3rem;
+    }
+
+    .description p {
+        width: 85%;
+        font-size: 0.9rem;
+    }
+
+    .imgseries {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
