@@ -184,6 +184,8 @@ main p {
 .pictures {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 1px;
 }
 
 /* Bildernas storlek minskad */
@@ -198,8 +200,8 @@ main p {
 .pictures p {
     justify-content: center;
     text-align: left;
-    margin: auto;
-    font-size: 1.1rem;
+    align-items: center;
+    margin-left: 5px;
     width: 25%;
     height: auto;
     line-height: 1.4;
@@ -228,7 +230,7 @@ main p {
     }
 
     .pictures img {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
@@ -246,7 +248,7 @@ main p {
         display: none;
     }
 
-    /* Visar texten för mobilläge */
+    /* Visar texten för mobilläge och surfplattor */
     .mobile {
         display: block;
         font-size: 1.2rem;
@@ -331,13 +333,16 @@ main p {
     }
 
     .pictures img {
-        width: 70%;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 10px;
     }
 
     .pictures p {
         width: 70%;
         margin: 10px;
-
     }
 
     .description {
@@ -353,5 +358,12 @@ main p {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+        min-width: 350px;
     }
 }
