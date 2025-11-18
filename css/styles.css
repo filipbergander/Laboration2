@@ -272,7 +272,7 @@ main p {
     /* Visar texten för mobilläge och surfplattor */
     .mobile {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 100%;
         text-align: left;
         margin: 0 auto;
@@ -354,6 +354,7 @@ main p {
         display: block;
         font-size: 1.1rem;
         text-align: left;
+        margin-bottom: 400px;
     }
 
     /* I en kolumn */
