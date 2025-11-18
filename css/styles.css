@@ -196,8 +196,18 @@ main p {
     border-radius: 3px;
 }
 
-/* Beskrivande text till bilder med redigeringar */
+/* Beskrivande text till bilder med redigeringar *//*
 .pictures p {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin-left: 5px;
+    width: 25%;
+    height: auto;
+    line-height: 1.4;
+}*/
+
+.picturestext {
     justify-content: center;
     text-align: left;
     align-items: center;
