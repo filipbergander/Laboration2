@@ -359,23 +359,19 @@ main p {
     /* I en kolumn */
     .pictures {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .pictures picture {
+        text-align: center;
     }
 
     .pictures img {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 10px;
+        width: 80%;
+        float: none;
     }
 
     .picturestext {
         width: 65%;
-    }
-
-    .picturestext p {
-        margin: 0 auto;
     }
 
     .description {
