@@ -65,7 +65,7 @@ nav a {
     border-radius: 5px;
     border: 1px solid rgb(206, 200, 200);
     box-shadow: 0 0 5px black;
-    padding: 8px 12px;
+    padding: 8px;
     transition: all 0.3s ease;
 }
 
@@ -241,7 +241,7 @@ main p {
 
     .about img {
         height: auto;
-        width: 50%;
+        width: 85%;
     }
 
     /* I kolumn och centrerade */
@@ -310,6 +310,7 @@ main p {
     .about {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     /* Text */
@@ -317,23 +318,24 @@ main p {
         font-size: 0.9rem;
         width: 70%;
         margin: 0 auto;
+        text-align: left;
     }
 
     /* Bild */
     .about img {
-        margin-left: 15px;
+        margin: 0 auto;
         height: auto;
-        width: 65%;
-        margin-bottom: 10px;
+        width: 70%;
     }
 
     nav {
         margin: 10px;
+        width: 100%;
     }
 
     /* Ändrat gap och textstorlek för att bättre passa på mindre upplösningar */
     nav ul {
-        gap: 0.5rem;
+        gap: 0.1rem;
         font-size: 0.85rem;
     }
 
