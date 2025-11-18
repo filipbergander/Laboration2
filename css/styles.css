@@ -196,7 +196,8 @@ main p {
     border-radius: 3px;
 }
 
-/* Beskrivande text till bilder med redigeringar *//*
+/* Beskrivande text till bilder med redigeringar */
+/*
 .pictures p {
     justify-content: center;
     text-align: left;
@@ -278,6 +279,14 @@ main p {
         flex-direction: column;
         align-items: center;
     }
+
+    .picturestext {
+        width: 70%;
+    }
+
+    .picturestext p {
+        margin: 0 auto;
+    }
 }
 
 /* Mobilläge */
@@ -350,9 +359,12 @@ main p {
         margin: 10px;
     }
 
-    .pictures p {
-        width: 70%;
-        margin: 10px;
+    .picturestext {
+        width: 65%;
+    }
+
+    .picturestext p {
+        margin: 0 auto;
     }
 
     .description {
