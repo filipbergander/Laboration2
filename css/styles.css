@@ -113,9 +113,9 @@ main p {
 .description p {
     font-size: 1.2rem;
     margin: 0 auto;
-    width: 55%;
+    width: 40%;
     height: auto;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* Bildsektioner i grid på startsida och centrerade*/
@@ -373,8 +373,9 @@ main p {
     }
 
     .description p {
-        width: 85%;
+        width: 70%;
         font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .imgseries {
