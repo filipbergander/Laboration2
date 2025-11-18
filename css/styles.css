@@ -107,6 +107,7 @@ main p {
 .desktop {
     text-align: left;
     margin-bottom: 4rem;
+    line-height: 1.6;
 }
 
 /* Ska inte visa text som är för mobil vid desktopläge */
@@ -181,8 +182,8 @@ main p {
 
 .about p {
     width: 25%;
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .about img {
@@ -207,25 +208,15 @@ main p {
 }
 
 /* Beskrivande text till bilder med redigeringar */
-/*
-.pictures p {
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    margin-left: 5px;
-    width: 25%;
-    height: auto;
-    line-height: 1.4;
-}*/
-
 .picturestext {
     justify-content: center;
     text-align: left;
     align-items: center;
     margin-left: 5px;
+    font-size: 1.1rem;
     width: 25%;
     height: auto;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* Surfplattor */
@@ -353,8 +344,9 @@ main p {
     .mobile {
         display: block;
         font-size: 1.1rem;
+        line-height: 1.6;
         text-align: left;
-        margin-bottom: 400px;
+        margin-bottom: 40px;
     }
 
     /* I en kolumn */
