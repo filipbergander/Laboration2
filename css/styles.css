@@ -77,6 +77,12 @@ nav a:hover {
     border: 1px solid rgb(0, 0, 0);
 }
 
+nav a:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 /* Huvudubrik */
 h1 {
     font-size: 2rem;
